@@ -20,6 +20,10 @@
             android:id="@+id/nav_brouser"
             android:icon="@drawable/ic_menu_brouser"
             android:title="@string/brouser" />
+        <item
+            android:id="@+id/nav_materialYou"
+            android:icon="@drawable/ic_menu_material_you"
+            android:title="@string/materialYou" />
 
     </group>
 </menu>

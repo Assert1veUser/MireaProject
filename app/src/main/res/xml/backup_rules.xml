@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-   Sample backup rules file; uncomment and customize as necessary.
-   See https://developer.android.com/guide/topics/data/autobackup
-   for details.
-   Note: This file is ignored for devices older that API 31
-   See https://developer.android.com/about/versions/12/backup-restore
--->
-<full-backup-content>
-    <!--
-   <include domain="sharedpref" path="."/>
-   <exclude domain="sharedpref" path="device.xml"/>
--->
-</full-backup-content>
+<?xml version="1.0" encoding="utf-8"?>
+   <resources>
+    <array name="color_bundles">
+        <item>color1</item>
+        <item>color2</item>
+        <item>color3</item>
+        <item>color4</item>
+    </array>
+
+    <string name="bundle_name_color1">Blue</string>
+    <string name="bundle_name_color2">Red</string>
+    <string name="bundle_name_color3">Yellow</string>
+    <string name="bundle_name_color4">Green</string>
+
+</resources>
