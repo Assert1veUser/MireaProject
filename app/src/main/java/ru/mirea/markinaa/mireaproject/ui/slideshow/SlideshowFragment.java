@@ -9,6 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.work.Constraints;
+import androidx.work.NetworkType;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
+import androidx.work.WorkRequest;
 
 import ru.mirea.markinaa.mireaproject.databinding.FragmentSlideshowBinding;
 
@@ -18,14 +23,26 @@ public class SlideshowFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        SlideshowViewModel slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
 
         binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textSlideshow;
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        WorkRequest uploadWorkRequest =
+                new OneTimeWorkRequest.Builder(UploadWorker.class)
+                        .build();
+        WorkManager
+                .getInstance(SlideshowFragment.this.getContext())
+                .enqueue(uploadWorkRequest);
+
+        Constraints constraints	=	new	Constraints.Builder()
+                .setRequiredNetworkType(NetworkType.UNMETERED)
+                .setRequiresCharging(true)
+                .build();
+        uploadWorkRequest	=
+                new	OneTimeWorkRequest.Builder(UploadWorker.class)
+                        .setConstraints(constraints)
+                        .build();
+
         return root;
     }
 
