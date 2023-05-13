@@ -24,6 +24,18 @@
             android:id="@+id/nav_materialYou"
             android:icon="@drawable/ic_menu_material_you"
             android:title="@string/materialYou" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_screen_camera"
+            android:title="@string/camera"/>
+        <item
+            android:id="@+id/nav_microphone"
+            android:icon="@drawable/ic_menu_mic"
+            android:title="@string/microphone" />
+        <item
+            android:id="@+id/nav_sensor"
+            android:icon="@drawable/ic_menu_sensors"
+            android:title="@string/sensor" />
 
     </group>
 </menu>

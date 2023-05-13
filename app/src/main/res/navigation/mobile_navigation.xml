@@ -32,4 +32,19 @@
         android:name="ru.mirea.markinaa.mireaproject.ui.materialYou.MaterialYouFragment"
         android:label="MaterialYou"
         tools:layout="@layout/fragment_material_you" />
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="ru.mirea.markinaa.mireaproject.ui.camera.CameraFragment"
+        android:label="fragment_camera"
+        tools:layout="@layout/fragment_camera" />
+    <fragment
+        android:id="@+id/nav_microphone"
+        android:name="ru.mirea.markinaa.mireaproject.ui.micro.MicrophoneFragment"
+        android:label="fragment_microphone"
+        tools:layout="@layout/fragment_microphone" />
+    <fragment
+        android:id="@+id/nav_sensor"
+        android:name="ru.mirea.markinaa.mireaproject.ui.sensor.SensorFragment"
+        android:label="fragment_sensor"
+        tools:layout="@layout/fragment_sensor" />
 </navigation>
