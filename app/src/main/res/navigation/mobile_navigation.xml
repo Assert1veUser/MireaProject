@@ -52,4 +52,9 @@
         android:name="ru.mirea.markinaa.mireaproject.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_createFile"
+        android:name="ru.mirea.markinaa.mireaproject.ui.createFile.CreateFileFragment"
+        android:label="fragment_create_file"
+        tools:layout="@layout/fragment_create_file" />
 </navigation>

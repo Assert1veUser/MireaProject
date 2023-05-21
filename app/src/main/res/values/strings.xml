@@ -18,4 +18,5 @@
     <string name="microphone">Micro</string>
     <string name="sensor">Sensor</string>
     <string name="profile">Profile</string>
+    <string name="createFile">CreateFile</string>
 </resources>

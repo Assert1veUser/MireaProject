@@ -40,6 +40,10 @@
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_menu_face"
             android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_createFile"
+            android:icon="@drawable/ic_menu_createfile"
+            android:title="@string/createFile" />
 
     </group>
 </menu>
