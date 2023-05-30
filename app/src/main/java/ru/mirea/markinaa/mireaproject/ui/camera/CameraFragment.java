@@ -43,7 +43,7 @@ public class CameraFragment extends Fragment {
     private FragmentCameraBinding binding;
 
     private Uri imageUri;
-    private Boolean isWork;
+    public Boolean isWork = true;
     private	static	final	int REQUEST_CODE_PERMISSION = 200;
 
     @Override

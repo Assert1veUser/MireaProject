@@ -57,4 +57,9 @@
         android:name="ru.mirea.markinaa.mireaproject.ui.createFile.CreateFileFragment"
         android:label="fragment_create_file"
         tools:layout="@layout/fragment_create_file" />
+    <fragment
+        android:id="@+id/nav_weather"
+        android:name="ru.mirea.markinaa.mireaproject.ui.weather.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
 </navigation>

@@ -36,7 +36,7 @@ public class SensorFragment extends Fragment implements SensorEventListener{
     @Override
     public void onPause() {
         super.onPause();
-        sensorManager.unregisterListener((SensorListener) this);
+        sensorManager.unregisterListener(this);
     }
     @Override
     public void onResume() {
